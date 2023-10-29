@@ -18,6 +18,7 @@
 		F996E4FB2AE5041F00EC3E70 /* LoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4FA2AE5041F00EC3E70 /* LoggingView.swift */; };
 		F9DC6F682AECEA25007A94F2 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6F672AECEA25007A94F2 /* LocationModel.swift */; };
 		F9DC6F6B2AEE3B77007A94F2 /* LoggingModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6F6A2AEE3B77007A94F2 /* LoggingModalView.swift */; };
+		F9DC6F6D2AEEA409007A94F2 /* LoggingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6F6C2AEEA409007A94F2 /* LoggingButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F9DC6F672AECEA25007A94F2 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		F9DC6F692AEE05D8007A94F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F9DC6F6A2AEE3B77007A94F2 /* LoggingModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingModalView.swift; sourceTree = "<group>"; };
+		F9DC6F6C2AEEA409007A94F2 /* LoggingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				F996E4FA2AE5041F00EC3E70 /* LoggingView.swift */,
 				F9DC6F6A2AEE3B77007A94F2 /* LoggingModalView.swift */,
+				F9DC6F6C2AEEA409007A94F2 /* LoggingButtonView.swift */,
 			);
 			path = LoggingView;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DC6F6D2AEEA409007A94F2 /* LoggingButtonView.swift in Sources */,
 				F996E4CC2AE4D82600EC3E70 /* MainView.swift in Sources */,
 				F996E4CE2AE4D82600EC3E70 /* LocationItem.swift in Sources */,
 				F996E4FB2AE5041F00EC3E70 /* LoggingView.swift in Sources */,
