@@ -8,11 +8,13 @@ struct LoggingView: View {
     @StateObject var locationModel = LocationModel()
     @State var isOpenSheet = true
     
+    @State var presentationDetent = PresentationDetent.small
+    
     // MARK: Properties
     private let tokyoStationCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 35.681111, longitude: 139.766667)
     
     var body: some View {
-        ZStack {
+        VStack {
             Map {
                 Marker("TokyoStation", systemImage: "tram.circle.fill", coordinate: tokyoStationCoordinate)
             }
@@ -28,12 +30,17 @@ struct LoggingView: View {
             }
         }
         .sheet(isPresented: $isOpenSheet) {
-            LoggingModalView(locationModel: locationModel)
+            LoggingModalView(locationModel: locationModel, presentationState: $presentationDetent)
                 .interactiveDismissDisabled()
-                .presentationDetents([.height(64.0)])
+                .presentationDetents([.small, .medium], selection: $presentationDetent)
+                .presentationBackgroundInteraction(.enabled(upThrough: presentationDetent))
                 .presentationDragIndicator(.visible)
         }
     }
+}
+
+extension PresentationDetent {
+    static let small = Self.height(64.0)
 }
 
 #Preview {
