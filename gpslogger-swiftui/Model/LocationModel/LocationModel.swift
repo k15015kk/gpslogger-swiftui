@@ -1,5 +1,6 @@
 import Foundation
 import CoreLocation
+import SwiftData
 
 enum LocationAuthorizationError: Error {
     case notDetermined
@@ -15,9 +16,12 @@ class LocationModel: ObservableObject {
     // MARK: - Properties
     private var locationManager = CLLocationManager()
     
+    // MARK: - Handler
+    var locationSaveHandler: (@MainActor (CLLocation) -> Void)? = nil
+    
     // MARK: - Initialize
     init() {
-        // LocationManagerの設定
+        
     }
     
     // MARK: - functions
@@ -71,6 +75,7 @@ class LocationModel: ObservableObject {
             }
             
             print(location)
+            await locationSaveHandler?(location)
         }
     }
 }

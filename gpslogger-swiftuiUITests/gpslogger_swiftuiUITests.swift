@@ -1,10 +1,3 @@
-//
-//  gpslogger_swiftuiUITests.swift
-//  gpslogger-swiftuiUITests
-//
-//  Created by 井上晴稀 on 2023/10/22.
-//
-
 import XCTest
 
 final class gpslogger_swiftuiUITests: XCTestCase {

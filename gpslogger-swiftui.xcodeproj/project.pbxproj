@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F996E4CA2AE4D82600EC3E70 /* gpslogger_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4C92AE4D82600EC3E70 /* gpslogger_swiftuiApp.swift */; };
+		F996E4CA2AE4D82600EC3E70 /* LoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4C92AE4D82600EC3E70 /* LoggerApp.swift */; };
 		F996E4CC2AE4D82600EC3E70 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4CB2AE4D82600EC3E70 /* MainView.swift */; };
-		F996E4CE2AE4D82600EC3E70 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4CD2AE4D82600EC3E70 /* Item.swift */; };
+		F996E4CE2AE4D82600EC3E70 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4CD2AE4D82600EC3E70 /* LocationItem.swift */; };
 		F996E4D02AE4D82700EC3E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F996E4CF2AE4D82700EC3E70 /* Assets.xcassets */; };
 		F996E4D42AE4D82700EC3E70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F996E4D32AE4D82700EC3E70 /* Preview Assets.xcassets */; };
 		F996E4DE2AE4D82700EC3E70 /* gpslogger_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4DD2AE4D82700EC3E70 /* gpslogger_swiftuiTests.swift */; };
@@ -17,6 +17,7 @@
 		F996E4EA2AE4D82800EC3E70 /* gpslogger_swiftuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4E92AE4D82800EC3E70 /* gpslogger_swiftuiUITestsLaunchTests.swift */; };
 		F996E4FB2AE5041F00EC3E70 /* LoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996E4FA2AE5041F00EC3E70 /* LoggingView.swift */; };
 		F9DC6F682AECEA25007A94F2 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6F672AECEA25007A94F2 /* LocationModel.swift */; };
+		F9DC6F6B2AEE3B77007A94F2 /* LoggingModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC6F6A2AEE3B77007A94F2 /* LoggingModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +39,9 @@
 
 /* Begin PBXFileReference section */
 		F996E4C62AE4D82600EC3E70 /* gpslogger-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gpslogger-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F996E4C92AE4D82600EC3E70 /* gpslogger_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpslogger_swiftuiApp.swift; sourceTree = "<group>"; };
+		F996E4C92AE4D82600EC3E70 /* LoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerApp.swift; sourceTree = "<group>"; };
 		F996E4CB2AE4D82600EC3E70 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		F996E4CD2AE4D82600EC3E70 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F996E4CD2AE4D82600EC3E70 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		F996E4CF2AE4D82700EC3E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F996E4D12AE4D82700EC3E70 /* gpslogger_swiftui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gpslogger_swiftui.entitlements; sourceTree = "<group>"; };
 		F996E4D32AE4D82700EC3E70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		F996E4FA2AE5041F00EC3E70 /* LoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingView.swift; sourceTree = "<group>"; };
 		F9DC6F672AECEA25007A94F2 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		F9DC6F692AEE05D8007A94F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F9DC6F6A2AEE3B77007A94F2 /* LoggingModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F9DC6F692AEE05D8007A94F2 /* Info.plist */,
-				F996E4C92AE4D82600EC3E70 /* gpslogger_swiftuiApp.swift */,
+				F996E4C92AE4D82600EC3E70 /* LoggerApp.swift */,
 				F996E4F62AE5006900EC3E70 /* Model */,
 				F996E4F72AE5007800EC3E70 /* View */,
 				F996E4CF2AE4D82700EC3E70 /* Assets.xcassets */,
@@ -159,7 +161,7 @@
 		F996E4F82AE5009200EC3E70 /* SwiftDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				F996E4CD2AE4D82600EC3E70 /* Item.swift */,
+				F996E4CD2AE4D82600EC3E70 /* LocationItem.swift */,
 			);
 			path = SwiftDataModel;
 			sourceTree = "<group>";
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				F996E4FA2AE5041F00EC3E70 /* LoggingView.swift */,
+				F9DC6F6A2AEE3B77007A94F2 /* LoggingModalView.swift */,
 			);
 			path = LoggingView;
 			sourceTree = "<group>";
@@ -311,10 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F996E4CC2AE4D82600EC3E70 /* MainView.swift in Sources */,
-				F996E4CE2AE4D82600EC3E70 /* Item.swift in Sources */,
+				F996E4CE2AE4D82600EC3E70 /* LocationItem.swift in Sources */,
 				F996E4FB2AE5041F00EC3E70 /* LoggingView.swift in Sources */,
 				F9DC6F682AECEA25007A94F2 /* LocationModel.swift in Sources */,
-				F996E4CA2AE4D82600EC3E70 /* gpslogger_swiftuiApp.swift in Sources */,
+				F9DC6F6B2AEE3B77007A94F2 /* LoggingModalView.swift in Sources */,
+				F996E4CA2AE4D82600EC3E70 /* LoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,11 @@
-//
-//  gpslogger_swiftuiApp.swift
-//  gpslogger-swiftui
-//
-//  Created by 井上晴稀 on 2023/10/22.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
-struct gpslogger_swiftuiApp: App {
+struct LoggerApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            LocationItem.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
